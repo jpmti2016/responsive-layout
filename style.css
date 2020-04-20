@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.parent {
+  background-color: #23424a;
+  padding: 50px;
+
+  /* width: 800px; */
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 5em; /*5 x 16 = 80pc */
+}
+
+.child {
+  background-color: #38cfd9;
+
+  /* height: 250px; */
+  /* Not use height use padding, avoid overflow of the content */
+  width: 50%;
+  padding: 1em;
+}
+
+.container {
+  background: #23424a;
+  color: #23424a;
+  border: 2px solid #23424a;
+  /* border-radius: 2%; */
+
+  width: 80%;
+  /* max-width: 890px; */
+  margin: 0 auto;
+
+  padding: 5em;
+  /* height: 300px; */
+}
+
+.intro-content {
+  background: white;
+  padding: 2em;
+  width: 50%;
+}
+
+.container-02 {
+  width: 100%;
+  /* max-width: 750px; */
+  margin: 0 auto;
+  background: #23424a;
+  color: white;
+  /* padding: 50px 0; */
+}
+
+.intro-content-02-A {
+  width: 25%;
+  padding: 1em 0;
+  margin: 0 25%;
+}
+
+.intro-content-02-B {
+  background: white;
+  color: #23424a;
+  width: 100%;
+  padding: 1em 25%;
+  margin: 0 auto;
+}
