@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
 }
 
 .parent {
@@ -60,4 +62,60 @@ body {
 
 .intro-content-02 {
   width: 50%;
+}
+
+/* Challange 03 */
+
+.hero {
+  background: #23424a;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.container-03 {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero__text {
+  width: 60%;
+}
+
+.hero p {
+  margin-bottom: 2em;
+}
+
+.header-03 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  padding-bottom: 1em;
+}
+
+.cta-03 {
+  display: inline-block;
+  background: #38cfd9;
+  color: #23424a;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cta-03:hover,
+.cta-03:focus {
+  opacity: 0.75;
 }
