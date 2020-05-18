@@ -4,30 +4,79 @@
   box-sizing: border-box;
 }
 
+/* Font size system (use em or px, avoid em cause it compund)
+12px 14px 16px 18px 20px 24px 30px 36px 48px 60px 72px */
+
 body {
   margin: 0;
-  font-size: 21px;
+  font-size: 18px;
+  text-align: left;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+/* Makes img responsive on flexbox */
+img {
+  max-width: 100%;
+}
+
+/* line-height must be correlated to the line-length/width (greather the width, greather the line heigth) and 
+font-size (smaller the font-size greather the line height) */
+p {
+  max-width: 28em;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
 }
 
 h2 {
   font-weight: 700;
   font-size: 36px;
 }
+
 .intro {
   width: 100%;
 
   background-color: #23424a;
   color: #fafafa;
   margin: 0 auto;
+  padding: 1rem 1rem 5rem 1rem;
 }
 
-.card {
-  padding: 5rem;
-  width: 50%;
-  max-width: 1500px;
+/* Flex conatiner */
+.row {
+  display: flex;
+  justify-content: space-between;
 }
+
+/* Center the content and set witdh and max-width */
+.container {
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Flex item */
+.card {
+  padding-top: 1rem;
+  width: 50%;
+}
+
+/* Flex item */
+.card-img {
+  width: 45%;
+  /* If don't set the img will be  */
+  /* sctreched to the heigth of the conainer */
+  align-self: start;
+  padding-top: 1rem;
+}
+/* .card-img img {
+  object-fit: contain;
+  border: 3px solid #87629a;
+} */
 
 .intro-title {
   font-style: normal;
@@ -35,6 +84,17 @@ h2 {
   font-size: 48px;
   padding-bottom: 0.3em;
 }
+
+/* Make line width 20-35em to fit between 45 and 75
+ characters per line */
+.intro-text {
+  max-width: 28em;
+  line-height: 1.4;
+}
+
+/* To align text items the best approach is to align for baseline 
+ align-items: baseline; cause if the has diferent size or prop they
+ don't would look at the same level */
 
 .cta {
   display: inline-block;
@@ -50,26 +110,25 @@ h2 {
   text-transform: uppercase;
 }
 
+/* Section Set padding and bgc */
 .three {
-  display: flex;
-  padding: 5rem;
-  margin: 0 auto;
+  padding: 1rem 1rem 5rem 1rem;
 }
 
 .three h2 {
   color: #87629a;
 }
 
+/* Select element that has an element before/left */
 .three-col + .three-col {
   margin-left: 20px;
 }
 
+/* Section Set padding and bgc */
 .two {
-  display: flex;
-  padding: 5rem;
-  margin: 0 auto;
   background-color: #136c72;
   color: white;
+  padding: 1rem 1rem 5rem 1rem;
 }
 
 .two-col + .two-col {
