@@ -49,6 +49,8 @@ h2 {
 /* Flex conatiner */
 .row {
   display: flex;
+  /* Only creates space if the items don't 
+  fill all container's space */
   justify-content: space-between;
 }
 
