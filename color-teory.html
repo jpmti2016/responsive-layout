@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="color-teory.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+      <div class="container">
+    <div class="img-contrast">
+      
+          <div class="hero-item column">
+            <h1>Spring image</h1>
+            <h2>White blosom</h2>
+          </div>
+          <div class="row">
+
+          <div class="image-item">
+              <h2>Image contrast</h2>
+              <p>Contrast is the scale of difference between black and white in your images. Without contrast you wouldn't have an image because there wouldn't be any differentiation between light and dark; everything would be black, white, or a single shade of grey somewhere in between.</p>
+              <p>Contrast is the difference in brightness between objects or regions. A white rabbit running across a snowy field has poor contrast, while a black dog against the same white background has good contrast.</p>
+              
+          </div>
+          <div class="image-item">
+              <h2>Image brightness</h2>
+              <p>Brightness refers to the overall lightness or darkness of the image.</p>
+              <p>Four possible ways that brightness and contrast can be misadjusted. When the brightness is too high, the whitest pixels are saturated, destroying the detail in these areas. The reverse is where the brightness is set too low, saturating the blackest pixels. When the contrast is set to high, resulting in the blacks being too black, and the whites being too white. Lastly, the contrast set too low; all of the pixels are a mid-shade of gray making the objects fade into each other.</p>
+          </div>
+          </div>
+
+         
+      </div>
+
+      <div class="color-hsla">
+        <div class="color-item">
+          <div class="column hsla">
+            <h2>HSLA(0-360, 0-100%, 0-100%, 0-1)</h2>
+            <p class="hsla-intro">
+              HSLA makes more intuitive what changing the values will do to the
+              color. Increasing the second value will increase the saturation of
+              that color. Decreasing the third value will decrease the lightness
+              of that color.
+            </p>
+          </div>
+        </div>
+
+        <div class="row saturation-brightness">
+            <div class="color-item">
+            <h2 class="hue">Hue (H)</h2>
+            <p>Hue is a degree on the color wheel (from 0 to 360): 0 (or 360) is red; 120 is green and 240 is blue. </p>
+                <p>Values above and below will be modulus 360.</p>
+            <p>It is the attribute o a color that let us identify two colors as "blue" even id thet aren't identical.</p>
+        </div>
+            
+          <div class="color-item">
+            <h2 class="gradient-saturation">Saturation (S)</h2>
+           <p>How colorful or vidid a color looks.</p>
+            <p>
+              Saturation is the intensity of a hue from gray tone (no
+              saturation) to pure, vivid color (high saturation).
+            </p>
+            <p>
+              0% is completely denatured (grayscale). 100% is fully saturated
+              (full color).
+            </p>
+            <p>Without saturation, hye is irrelevant -- rotating the hue when saturation is 0% doesn't actually change the color at all</p>
+          </div>
+
+          <div class="color-item">
+            <h2 class="gradient-brightness">Brightness (L)</h2>
+           
+            <p>
+              Brightness is the relative lightness or darkness of a particular
+              color, from black (no brightness) to white (full brightness).
+              Also called Lightness.
+            </p>
+            <p>How close a color is to black or white.</p>
+            <p>
+              0% is completely dark (black). 100% is completely light (white).
+              50% is average lightness (pure color at the given hue).
+            </p>
+          </div>
+          <div class="color-item">
+            <h2 class="gradient-alpha-trans">Alpha (A)</h2>
+            <p>
+              Opacity/Transparency value. 0 is fully transparent. 1 is fully
+              opaque. 0.5 is 50% transparent.
+            </p>
+          </div>
+      
+        </div>
+
+        <div class="color-item saturation-vs-brightness">
+          <div class="row">
+            <div class="info">
+              <h2>Saturation vs brightness</h2>
+              <p>
+                The illustration above shows the difference between saturation
+                and brightness. We first pick a blue hue from the color wheel
+                (stretched out into a line to make a prettier illustration). We
+                can then reduce the saturation so that the blue hue becomes more
+                and more blue gray. With zero saturation it is gray. We pick a
+                less saturated blue tone and then turn the brightness up and
+                down on that tone. Note that increasing the brightness is not
+                the same as decreasing saturation. Decreasing saturation turns
+                the colors into gray shades.
+              </p>
+              <p>
+                Increasing brightness turns a blue into a lighter sky blue but
+                without making it gray.
+              </p>
+              <p>
+                Taking an almost totally desaturated blue, so desaturated it is
+                almost perfectly gray, and increasing the brightness will result
+                in what appear to be lighter shades of gray. However, if there
+                is any "blue" at all in the gray by increasing saturation we can
+                achieve a bright blue again.
+              </p>
+            </div>
+            <img
+              src="img/hsb_eg.gif"
+              alt="difference between saturation and brightness"
+            />
+          </div>
+        </div>
+
+        <div class="color-item">
+          <div class="row hue-img">
+            <img src="img/DvXcRqsWkAAgh75.jpg" alt="hue wheel" />
+            <img src="img/download.jpeg" alt="hue wheel" />
+            <img src="img/color-wheel.png" alt="hue temp" />
+          </div>
+        </div>
+        <div class="color-item">
+            <h2>Color Contrast </h2>
+            <p>The difference in luminance between two adjacent colors or overlaid colors (foreground / background)</p>
+        </div>
+
+        <div class="color-item">
+             <h2>Sources</h2>
+          <div class="column">
+           
+            <a href="https://www.sessions.edu/color-calculator/">Color Calculator</a>
+            <a href="https://css-tricks.com/yay-for-hsla/">Yay for HSLa</a>
+            <a
+              href="http://www.georeference.org/doc/colors_as_hue_saturation_and_brightness.htm"
+              >Colors as Hue, Saturation and Brightness</a
+            >
+            <a
+              href="https://helpx.adobe.com/photoshop/how-to/photo-enhancement-basics.html"
+              >Adjust the image quality</a
+            >
+            <a href="http://learn.leighcotnoir.com/artspeak/elements-color/hue-value-saturation/">HUE, VALUE, SATURATION</a>
+            <a href="https://www.w3schools.com/css/css3_colors.asp">CSS Colors</a>
+            <a href="https://webdesignledger.com/contrast-colors-use-get-maximum-impact/">How To Use Color Contrast To Get The Maximum Impact</a>
+            <a href="https://medium.muz.li/the-science-of-color-contrast-an-expert-designers-guide-33e84c41d156">The Science of Color Contrast — An Expert Designer’s Guide</a>
+            <a href="http://www.photocritic.org/articles/what-is-contrast">What is contrast in photography?</a>
+            <a href="https://www.dspguide.com/ch23/5.htm">Image Formation & Display</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>
