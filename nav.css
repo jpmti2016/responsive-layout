@@ -89,6 +89,12 @@ header {
   margin-left: 1rem;
 } */
 
+.nav__item--push-right {
+  /* Push the item all the way to the right 
+    cause the margin is only applied to the left */
+  margin-left: auto;
+}
+
 .nav__link {
   color: #fff;
   text-decoration: none;
