@@ -64,12 +64,12 @@ h2 {
 /* Flex item */
 .card {
   padding-top: 1rem;
-  width: 50%;
+  width: 52%;
 }
 
 /* Flex item */
 .card-img {
-  width: 45%;
+  width: 42%;
   /* If don't set the img will be  */
   /* sctreched to the heigth of the conainer */
   align-self: start;
@@ -139,40 +139,46 @@ h2 {
 
 /* 02-05 challege */
 .five {
-  display: flex;
-  padding: 4rem;
   border: 1px solid red;
-  /* flex-direction: row; */
+  margin-top: 3rem;
+  margin-bottom: 8rem;
 }
 
 .left {
+  width: 52%;
   color: #136c72;
-  padding: 1rem;
-  /* border: 1px solid blue; */
-  /* display: flex;
-  1\
-  flex-direction: column; */
+  /* padding: 1rem; */
+  border: 1px solid blue;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  align-content: center;
 }
 
 .rigth {
+  text-align: center;
+  width: 42%;
   background-color: #136c72;
   color: #fafafa;
-  border: 1px solid green;
-  /* display: flex;
-  flex-direction: column; */
+  border: 1px solid yellow;
 }
 
 .rigth-item {
-  align-self: center;
+  padding: 0 4rem;
+  border: 1px solid #fafafa;
 }
+
 .rigth-item + .rigth-item {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.left-item {
+  text-align: start;
+}
+
+.left h2 {
+  color: #87629a;
 }
 .left-item + .left-item {
   margin-top: 1rem;
@@ -197,21 +203,14 @@ h2 {
 .hero-item h2 {
   font-weight: 700;
   font-size: 60px;
+  color: #baa949;
 }
 
 /* color info article */
 a {
-  /* display: inline-block; */
-  /* background-color: #38cfd9; */
   color: #23424a;
-  /* padding: 0.3em 1em; */
-  /* border-radius: 100px; */
-  /* font-weight: 400; */
   font-size: 1.5rem;
-  /* line-height: 150%; */
-  /* letter-spacing: 0.05em; */
   text-decoration: none;
-  /* text-transform: uppercase; */
 }
 
 .color-item {
