@@ -73,9 +73,22 @@ header {
   background: #136c72;
   padding: 0.5em 0;
 }
+
+.logo {
+  margin-right: 1rem;
+}
 .nav {
   display: flex;
   justify-content: space-between;
+  /* Center elements on the cross axis */
+  align-items: center;
+
+  /* Will try to grow as posible as it can be (width: 100% or grow: 1) */
+  /* width: 100%; */
+  flex-grow: 1;
+
+  /* Will try to compress as posible as it can be (shrink: 1) */
+  flex-shrink: 1;
 }
 
 .nav__list {
