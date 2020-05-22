@@ -57,7 +57,7 @@ h1 {
 
 .row {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
 }
 
 .col {
@@ -73,6 +73,10 @@ header {
   background: #136c72;
   padding: 0.5em 0;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
 
 .nav__list {
   margin: 0;
@@ -82,12 +86,9 @@ header {
   justify-content: start;
 }
 
-.nav__item {
-  margin-right: 1rem;
-}
-/* .nav__item + .nav__item {
+.nav__item + .nav__item {
   margin-left: 1rem;
-} */
+}
 
 .nav__item--push-right {
   /* Push the item all the way to the right 
