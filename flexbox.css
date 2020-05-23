@@ -139,7 +139,6 @@ h2 {
 
 /* 02-05 challege */
 .five {
-  border: 1px solid red;
   margin-top: 3rem;
   margin-bottom: 8rem;
 }
@@ -148,7 +147,6 @@ h2 {
   width: 52%;
   color: #136c72;
   /* padding: 1rem; */
-  border: 1px solid blue;
 }
 
 .column {
@@ -161,12 +159,10 @@ h2 {
   width: 42%;
   background-color: #136c72;
   color: #fafafa;
-  border: 1px solid yellow;
 }
 
 .rigth-item {
   padding: 0 4rem;
-  border: 1px solid #fafafa;
 }
 
 .rigth-item + .rigth-item {
@@ -182,4 +178,72 @@ h2 {
 }
 .left-item + .left-item {
   margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+
+  .card,
+  .card-img {
+    width: 100%;
+  }
+
+  .intro {
+    padding: 1rem;
+  }
+
+  .intro-title {
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 0.2em;
+    line-height: 1.2;
+  }
+
+  .cta {
+    padding: 0.1em 1em;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 125%;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    line-height: 120%;
+  }
+
+  .three {
+    padding: 1rem;
+  }
+
+  .three-col + .three-col {
+    margin-left: 0;
+  }
+
+  .two {
+    padding: 1rem;
+  }
+
+  .two-col + .two-col {
+    margin-left: 0;
+  }
+
+  .left,
+  .rigth {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .left-item {
+    padding-bottom: 1rem;
+  }
+
+  .left-item + .left-item {
+    margin-top: 0;
+  }
 }
