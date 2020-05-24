@@ -34,7 +34,7 @@ h2 {
 
 .container {
   width: 85%;
-  max-width: 1524px;
+  max-width: 1128px;
   margin: 0 auto;
 }
 section {
@@ -46,6 +46,9 @@ section {
   min-height: 660px;
   padding: 15rem 0;
   text-align: center;
+
+  /* display: flex;
+  align-items: center; */
 }
 
 .heading h1 {
@@ -84,4 +87,34 @@ section {
 .care {
   background-color: #824936;
   color: #f3eed9;
+}
+
+footer {
+  font-size: 18px;
+
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #f3eed9;
+}
+
+/* .source {
+  font-size: 18px;
+} */
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 5%;
+  }
+
+  .heading h1 {
+    font-size: 3.75rem;
+  }
 }
